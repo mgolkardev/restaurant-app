@@ -1,0 +1,30 @@
+@import "../../themes/colors";
+@import "../../themes/dimensions";
+
+.vendors {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  padding: $padding-normal;
+
+  &__wrapper {
+    flex: 1;
+  }
+
+  &__list {
+    direction: rtl !important;
+  }
+
+  &__count {
+    font: $large-bold;
+    padding-bottom: $padding-normal;
+  }
+
+  &__link {
+    padding: 4px 0;
+  }
+
+  &__progress {
+    margin: 100px auto;
+  }
+}

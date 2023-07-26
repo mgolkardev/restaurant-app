@@ -1,0 +1,20 @@
+@import "../../../../../../themes/colors";
+@import "../../../../../../themes/dimensions";
+
+.vendor-item-delivery {
+  display: flex;
+  justify-content: space-between;
+  font: $small-regular;
+
+  &__title {
+    color: $light;
+    margin-left: 4px;
+    display: inline-block;
+  }
+
+  &__estimate {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+}

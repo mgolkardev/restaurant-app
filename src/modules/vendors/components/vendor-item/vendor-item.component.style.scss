@@ -1,0 +1,24 @@
+@import "../../../../themes/colors";
+@import "../../../../themes/dimensions";
+
+.vendor-item {
+  background-color: $white;
+  color: $on-background;
+  border-radius: 6px;
+  height: 100%;
+  box-shadow: 0 2px 12px 0 $shadow-color;
+
+  &__body {
+    padding: 20px $padding-normal 8px $padding-normal;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    &__description {
+      font: $small-regular;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}

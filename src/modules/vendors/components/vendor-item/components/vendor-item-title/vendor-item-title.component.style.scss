@@ -1,0 +1,49 @@
+@import "../../../../../../themes/colors";
+@import "../../../../../../themes/dimensions";
+
+.vendor-item-title {
+  display: flex;
+  justify-content: space-between;
+
+  &__title {
+    display: flex;
+    width: 50%;
+    flex-grow: 1;
+    margin-left: 10px;
+  }
+
+  &__titleText {
+    font: $medium-medium;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__discount {
+    background-color: $primary;
+    color: $white;
+    margin: 0 4px;
+    font: $small-regular;
+    padding: 0px 4px;
+    border-radius: 4px;
+    align-self: center;
+  }
+
+  &__rateLayout {
+    font: $small-regular;
+    direction: ltr;
+    display: flex;
+    align-items: center;
+    color: $light;
+  }
+
+  &__rate {
+    display: flex;
+    align-items: center;
+    color: $rate;
+    background-color: $rate-background;
+    gap: 2px;
+    padding: 0 4px;
+    border-radius: 4px;
+  }
+}

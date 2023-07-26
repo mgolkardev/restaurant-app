@@ -1,0 +1,17 @@
+@import "../../themes/colors";
+@import "../../themes/dimensions";
+
+.home {
+  padding: 40px $padding-normal;
+  text-align: center;
+
+  &__link {
+    padding: 4px $padding-normal;
+    border-radius: $radius-normal;
+
+    &--primary {
+      background-color: $primary;
+      color: $white;
+    }
+  }
+}
