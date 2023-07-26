@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, List, Progress } from "../shared/components";
+import { Link, List, Progress, Skeleton } from "../shared/components";
 import { LatLong } from "./apis/interfaces/lat-long.interface";
 import "./vendors.module.style.scss";
 import { VendorItem } from "./components/vendor-item/vendor-item.component";
@@ -44,12 +44,13 @@ export const VendorsModule = () => {
         itemRenderer={({ key, index, isLoaded, style }) => {
           const item = data[index]?.data;
 
-          if (!isLoaded || !item)
+          if (!isLoaded || !item) {
             return (
-              <p key={key} style={style}>
-                Loading...
-              </p>
+              <div key={key} style={style} className="vendors__skeleton">
+                <Skeleton />
+              </div>
             );
+          }
 
           return (
             <Link

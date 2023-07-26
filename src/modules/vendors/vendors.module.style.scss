@@ -20,7 +20,8 @@
     padding-bottom: $padding-normal;
   }
 
-  &__link {
+  &__link,
+  &__skeleton {
     padding: 4px 0;
   }
 
